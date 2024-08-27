@@ -99,9 +99,9 @@ foreach ($file in $files1) {
 #Stergere fisierele descarcate
 Remove-Item -Path $env:USERPROFILE\Desktop\Pwned.jpg -Force
 Remove-Item -Path $env:USERPROFILE\Desktop\Wallpaper.jpg -Force
-#Remove-Item -Path $env:USERPROFILE\Desktop\Ransom.txt -Force
-#Remove-Item -Path $env:USERPROFILE\Desktop\Countdown.exe -Force
-
+Remove-Item -Path $env:USERPROFILE\Desktop\Ransom.txt -Force
+Remove-Item -Path $env:USERPROFILE\Desktop\Countdown.exe -Force
+Remove-Item -Path $env:USERPROFILE\Desktop\Unscript.ps1 -Force
 
 }
 
