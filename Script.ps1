@@ -125,7 +125,7 @@ function Encrypt-File {
     # Scrie fisierul criptat
     [System.IO.File]::WriteAllBytes($FilePath + ".rsm", $outputBytesWithIv)
 
-    Write-Host "Fisier criptat: $FilePath.encrypted"
+    Write-Host "Fisier criptat: $FilePath.rsm"
 
     # Sterge fisierul original dupa encriptie
     Remove-Item -Path $FilePath -Force
