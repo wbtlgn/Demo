@@ -24,8 +24,8 @@ public class Taskbar {
 Try{
 
 # Descarca imaginea Pwned.jpg
-$url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Pwned.jpg"
-$output = "$env:USERPROFILE\Desktop\Pwned.jpg"
+$url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Pwned.png"
+$output = "$env:USERPROFILE\Desktop\Pwned.png"
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($url, $output)
 
