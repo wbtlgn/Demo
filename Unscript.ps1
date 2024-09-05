@@ -36,9 +36,12 @@ Sleep 1
 $wex.SendKeys('%{F4}')
 Sleep 2
 
+# Opreste proces Countdown.exe
+Stop-Process -Name "Countdown"
+
 ###Decriptare
 
-# # Defineste cale dencriptare
+# Defineste cale dencriptare
 $MyDocuments = [Environment]::GetFolderPath('MyDocuments')
 $Desktop = [Environment]::GetFolderPath('Desktop')
 
