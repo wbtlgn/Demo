@@ -30,6 +30,12 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer
 Stop-Process -ProcessName explorer -Force
 Start-Process explorer
 
+# Inchide noua instanta de Windows Explorer
+$wex = New-Object -ComObject wscript.shell;
+Sleep 1
+$wex.SendKeys('%{F4}')
+Sleep 2
+
 ###Decriptare
 
 # # Defineste cale dencriptare
