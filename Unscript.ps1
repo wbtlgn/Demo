@@ -24,8 +24,7 @@ $taskbarHwnd = [Taskbar]::FindWindow("Shell_TrayWnd", "")
 [Taskbar]::ShowWindow($taskbarHwnd, [Taskbar]::SW_SHOW)
 
 # Afiseaza icons de pe desktop
-(New-Object -ComObject Shell.Application).ToggleDesktop()
-#Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name HideIcons -Value 0
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name HideIcons -Value 0
 
 # Restart Explorer
 Stop-Process -ProcessName explorer -Force
