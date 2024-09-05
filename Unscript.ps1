@@ -26,6 +26,10 @@ $taskbarHwnd = [Taskbar]::FindWindow("Shell_TrayWnd", "")
 # Afiseaza icons de pe desktop
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name HideIcons -Value 0
 
+# Restart Explorer
+Stop-Process -ProcessName explorer -Force
+Start-Process explorer
+
 ###Decriptare
 
 # # Defineste cale dencriptare
