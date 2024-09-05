@@ -19,9 +19,12 @@ public class Taskbar {
 "@
 
 Try{
-
+# Afiseaza taskbar
 $taskbarHwnd = [Taskbar]::FindWindow("Shell_TrayWnd", "")
 [Taskbar]::ShowWindow($taskbarHwnd, [Taskbar]::SW_SHOW)
+
+# Afiseaza icons de pe desktop
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name HideIcons -Value 0
 
 ###Decriptare
 
