@@ -117,7 +117,7 @@ Remove-Item -Path $env:USERPROFILE\Desktop\Pwned.png -Force
 Remove-Item -Path $env:USERPROFILE\Desktop\Wallpaper.jpg -Force
 Remove-Item -Path $env:USERPROFILE\Desktop\Ransom.txt -Force
 Remove-Item -Path $env:USERPROFILE\Desktop\Countdown.exe -Force
-# Remove-Item -Path $env:USERPROFILE\Desktop\Unscript.ps1 -Force
+Remove-Item -Path $env:USERPROFILE\Desktop\Unscript.ps1 -Force
 
 }
 
